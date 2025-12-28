@@ -1,0 +1,17 @@
+.login {
+    font-weight:var(--fw-light) ;
+    font-size: var(--fs-md);
+    color: var(--primary-color) ;
+    font-family: var(--font-family-heading);
+}
+
+.auth-form {
+    padding: 2.5rem;
+    padding-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .auth-form {
+        padding: 1.5rem;
+    }
+}

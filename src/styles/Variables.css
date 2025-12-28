@@ -1,0 +1,19 @@
+:root {
+    --primary-color:#00A859;
+    --secondary-color:#F58634;
+    --text-color:#0F0B0B;
+    --footer-bg:#1B2432;
+    --font-family-heading: 'MDNichromeTest';
+    --font-family-base: 'inter';
+    --fs-sm: 16px;
+    --fs-sml: 18px;
+    --fs-m: 20px;
+    --fs-md: 40px;
+    --fs-lg: 56px;
+    --fs-lgg: 64px;
+    --fs-xl: 80px;
+    --fw-light: 400;
+    --fw-normal: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
