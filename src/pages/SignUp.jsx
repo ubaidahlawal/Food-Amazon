@@ -20,8 +20,8 @@ const SignUp = () => {
    
     return (
         <>
-        <div className="min-vh-100 d-flex align-items-center justify-content-center">
-        <div className="row w-100 overflow-hidden" style={{maxWidth: "1200px"}}>
+        <div className="w-100 d-flex align-items-center justify-content-center">
+        <div className="row w-100 overflow-hidden">
           
         <div className="col-md-6 p-0">
         <img src={AuthImage} alt="Food Amazon" className="img-fluid h-100 w-100" loading="lazy"/>

@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const navigate = useNavigate()
-    const handleNavList = () => {navigate("/")}
+    const handleNavList = () => {navigate("/landing")}
     return(
         <>
         <nav className="navbar navbar-expand-lg sticky-top shadow-sm position-fixed top-0 fixed-top">
@@ -30,13 +30,13 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav me-auto ms-lg-5 gap-5 mb-0 nav-links">
-        <li className="nav-item"><Link to="/" className="text-dark">Home</Link></li>
+        <li className="nav-item"><Link to="#" className="text-dark">Home</Link></li>
         <li className="nav-item"><a href="#products" onClick={handleNavList} className="text-dark">Our Products</a></li>
         <li className="nav-item"><a href="#health"  onClick={handleNavList} className="text-dark">Health Benefits</a></li>
         <li className="nav-item"><a href="#blog"  onClick={handleNavList} className="text-dark">Blog</a></li>
         <li className="nav-item"><a href="#faqs" onClick={handleNavList} className="text-dark">FAQs</a></li>
         </ul>
-        <div className="d-none d-lg-flex align-items-center gap-5 nav-actions ms-auto">
+        <div className="d-flex align-items-center gap-5 nav-actions ms-auto">
         <img src={Search} alt="s-icon" className="me-4" loading="lazy"/>
         <div className="d-flex align-items-center gap-3">
         <img src={Heart} alt="h-icon" onClick={() => navigate("/landing3")} loading="lazy"/>

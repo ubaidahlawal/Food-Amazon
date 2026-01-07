@@ -8,7 +8,7 @@ const LogIn = () => {
     const navigate = useNavigate();
     const handleLogIn = (e) => {
         e.preventDefault();
-        navigate("/");
+        navigate("/landing");
     };
 
     const togglePassword = () => {
@@ -16,8 +16,8 @@ const LogIn = () => {
     }
    return (
      <>
-     <div className="min-vh-100 d-flex align-items-center justify-content-center">
-     <div className="row w-100 overflow-hidden" style={{maxWidth: "1200px"}}>
+     <div className="d-flex align-items-center justify-content-center">
+     <div className="row w-100 overflow-hidden">
      
       <div className="col-md-6 p-0 auth-img">
       <img src={AuthImage} alt="Food Amazon"className="img-fluid h-100 w-100" loading="lazy" />
