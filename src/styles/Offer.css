@@ -1,0 +1,44 @@
+.offer-h2 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-d);
+    font-family: var( --font-family-heading);
+}
+
+.offer-btn {
+    padding:13px ;
+    color: white;
+    font-size: var(--fs-sml);
+    font-weight: var( --fw-semibold);
+    border: none;
+    border-radius: 0;
+}
+
+.offer-message {
+    margin-top: 100px;
+    background-color: #F86624;
+    padding: 50px;
+}
+
+.offer-box {
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.c-img {
+    max-height: 320px;
+}
+
+@media (max-width: 768px) {
+    .offer-h2 {
+        /* margin: auto; */
+        text-align: center;
+        font-size: 2.0rem;
+    }
+  
+    .offer-img {
+        margin-bottom: 20px;
+    }
+    .c-img {
+        margin-top: 10px;
+    }
+}

@@ -21,21 +21,21 @@ const Hero = () => {
         <span className="hero-span"> for </span> You!
         </h1>
         <button className="btn d-flex align-items-center gap-2 icon-btn">
-        Shop Now <img src={SolarIcon} alt="s-icon" />
+        Shop Now <img src={SolarIcon} alt="s-icon" loading="lazy"/>
         </button>
-        <img src={FrameIcon} alt="f-icon" className="img-fluid mt-5 frame-icon" />
+        <img src={FrameIcon} alt="f-icon" className="img-fluid mt-5 frame-icon d-none d-md-block" loading="lazy"/>
         </div>
 
         <div className="col-lg-6 hero-image position-relative hero-img-wrapper">
-        <img src={FoodAmazon} alt="food-plate" className="plate-img img-fluid" />
-        <img src={Rating} alt="5 stars" className="rating-badge img-fluid" />
-        <img src={TextLogo} alt="text-logo" className="img-fluid text-logo"/>
+        <img src={FoodAmazon} alt="food-plate" className="plate-img img-fluid" loading="lazy"/>
+        <img src={Rating} alt="5 stars" className="rating-badge img-fluid" loading="lazy" />
+        <img src={TextLogo} alt="text-logo" className="img-fluid text-logo" loading="lazy"/>
         </div>
         </div>
         </div>
-        <img src={GreenWaves} alt="green-waves" className="green-waves" />
+        <img src={GreenWaves} alt="green-waves" className="green-waves d-none d-md-block" loading="lazy" />
         <div className="note-wrap">
-        <img src={HeroNote} alt="hero-note" className="hero-note img-fluid" />
+        <img src={HeroNote} alt="hero-note" className="hero-note img-fluid" loading="lazy" />
         </div>
         </section>
        

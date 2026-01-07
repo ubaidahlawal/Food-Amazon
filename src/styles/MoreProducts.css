@@ -1,0 +1,64 @@
+.green-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    padding: 15px 12px;
+    gap: 10px;
+}
+
+.moreProduct-sec{
+    margin-top: 10rem;
+}
+
+
+.orange-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+    padding: 15px 12px;
+    gap: 10px;
+}
+
+.qty-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    border: 1px solid #C4D1D0;
+    background-color: #C4D1D0;
+}
+
+.qty-value {
+    padding: 6px 18px;
+    border: 1px solid #C4D1D0;
+    /* width: 24px; */
+    /* height: 38px; */
+}
+
+.mp-h2 {
+    font-family: var(--font-family-heading);
+    font-size:var( --fs-md) ;
+    font-weight: var(--fw-bold);
+}
+
+.c-f {
+    font-weight: var( --fw-light);
+    font-size: var(--fs-s);
+    font-family: var(--font-family-base);
+}
+
+.mp-m {
+    color: var(--secondary-color);
+    font-weight: var(--fw-semibold);
+    font-size: 24px;
+}
+
+.rate, .mp-p {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-sml);
+    font-family: var(--font-family-base);
+}
+
+.mp-p {
+    line-height: 30px;
+}

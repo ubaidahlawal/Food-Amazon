@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "../styles/PopularProducts.css";
 import Almond from "../assets/Almond.png";
@@ -5,10 +6,10 @@ import Berries from "../assets/Berries.png";
 import Coconut from "../assets/Coconut.png";
 import HeartImg from "../assets/HeartImg.png";
 import StarIcon from "../assets/StarIcon.png";
-const PopularProducts = () => {
+const PopularProducts = ({ onAddToCart }) => {
     return (
         <>
-        <section className="products-section py-5">
+        <section id="products" className="products-section py-5">
         <div className="container">
         <div className="mb-3">
         <h1 className="fw-bold products-h1">Our Popular Products</h1>
@@ -19,71 +20,71 @@ const PopularProducts = () => {
         Browse our most popular snacks and make your day more beautiful and glorious.
         </p>
         </div>
-        <a href="/products" className="btn btn-outline-success mt-3 mt-md-0 product-btn p-3">
+        <Link to="/landing2" className="btn btn-outline-success mt-3 mt-md-0 product-btn p-3 mx-auto mx-md-0">
         Browse All
-        </a>
+        </Link>
         </div>    
          
          <div className="row g-4">
          <div className="col-md-4">
          <div className="product-item mt-4">
-         <img src={Almond} alt="Almond Delight" className="card-img-top" />
+         <img src={Almond} alt="Almond Delight" className="card-img-top c-img" />
          <div className="mt-4">
          <div className="d-flex justify-content-between align-items-center mb-1"> 
          <small className="text-muted">Coconut Flakes</small>
-         <img src={HeartImg} alt="heart" />
+         <img src={HeartImg} alt="heart" loading="lazy"/>
          </div>
          <h5 className="fw-bold mb-2 product-name mt-2">Organic Almond Delight</h5>
          <div className="d-flex justify-content-between align-items-center mb-3">
          <div className="d-flex align-items-center gap-1 mt-2">
-         <img src={StarIcon} alt="rating" className="star-icon" />
+         <img src={StarIcon} alt="rating" className="star-icon" loading="lazy" />
          <span>5.0 (18)</span>
          </div>
          <span className="fw-semibold">$110</span>
          </div>
-         <button className="btn btn-outline-success w-100 mt-3 p-3">Add to Cart</button>
+         <button className="btn btn-outline-success w-100 mt-3 p-3 p-btn" onClick={onAddToCart}>Add to Cart</button>
          </div>
          </div>
          </div>
 
          <div className="col-md-4">
          <div className="product-item mt-4">
-         <img src={Berries} alt="Almond Delight" className="card-img-top" />
+         <img src={Berries} alt="Almond Delight" className="card-img-top c-img" />
          <div className="mt-4">
          <div className="d-flex justify-content-between align-items-center mb-1"> 
          <small className="text-muted">Coconut Flakes</small>
-         <img src={HeartImg} alt="heart" />
+         <img src={HeartImg} alt="heart" loading="lazy" />
          </div>
          <h5 className="fw-bold mb-2 product-name mt-2">Berry Bliss Bites</h5>
          <div className="d-flex justify-content-between align-items-center mb-3">
          <div className="d-flex align-items-center gap-1 mt-2">
-         <img src={StarIcon} alt="rating" className="star-icon" />
+         <img src={StarIcon} alt="rating" className="star-icon" loading="lazy" />
          <span>5.0 (28)</span>
          </div>
          <span className="fw-semibold">$139</span>
          </div>
-         <button className="btn btn-outline-success w-100 mt-3 p-3">Add to Cart</button>
+         <button className="btn btn-outline-success w-100 mt-3 p-3 p-btn" onClick={onAddToCart}>Add to Cart</button>
          </div>
          </div>
          </div>
 
          <div className="col-md-4">
          <div className="product-item mt-4">
-         <img src={Coconut} alt="Almond Delight" className="card-img-top" />
+         <img src={Coconut} alt="Almond Delight" className="card-img-top c-img" />
          <div className="mt-4">
          <div className="d-flex justify-content-between align-items-center mb-1"> 
          <small className="text-muted">Coconut Flakes</small>
-         <img src={HeartImg} alt="heart" />
+         <img src={HeartImg} alt="heart" loading="lazy" />
          </div>
          <h5 className="fw-bold mb-2 product-name mt-2">Coconut Crunchies</h5>
          <div className="d-flex justify-content-between align-items-center mb-3">
          <div className="d-flex align-items-center gap-1 mt-2">
-         <img src={StarIcon} alt="rating" className="star-icon" />
+         <img src={StarIcon} alt="rating" className="star-icon" loading="lazy"/>
          <span>5.0 (102)</span>
          </div>
          <span className="fw-semibold">$399</span>
          </div>
-         <button className="btn btn-outline-success w-100 mt-3 p-3">Add to Cart</button>
+         <button className="btn btn-outline-success w-100 mt-3 p-3 p-btn" onClick={onAddToCart}>Add to Cart</button>
          </div>
          </div>
          </div>

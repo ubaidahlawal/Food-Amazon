@@ -60,3 +60,30 @@ img{
     background-color: var(--text-color);
    
 }
+
+@media (max-width: 768px) {
+    .products-h1, .product-p{
+        text-align: center;
+    }
+    .products-h1 {
+        font-size: 40px;
+    }
+    .product-btn {
+        display: block;
+        margin: 20px auto;
+
+    }
+    .c-img {
+        max-height: 220px; 
+    }
+    .product-name {
+        font-size: 16px;
+    }
+    .p-btn {
+        font-size: 15px;
+        padding: 14px;
+    }
+    .product-item > div {
+        margin-top: 12px;
+    }
+}

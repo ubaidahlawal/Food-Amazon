@@ -1,0 +1,22 @@
+.t-name {
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-sml);
+}
+
+.t-title {
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-m);
+}
+
+.t-text {
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-light);
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.btn-l {
+  margin: auto;
+}

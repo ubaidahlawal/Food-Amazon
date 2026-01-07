@@ -20,7 +20,7 @@ const LogIn = () => {
      <div className="row w-100 overflow-hidden" style={{maxWidth: "1200px"}}>
      
       <div className="col-md-6 p-0 auth-img">
-      <img src={AuthImage} alt="Food Amazon"className="img-fluid h-100 w-100 " />
+      <img src={AuthImage} alt="Food Amazon"className="img-fluid h-100 w-100" loading="lazy" />
       </div>
       
       <div className="col-md-6 d-flex flex-column justify-content-center auth-form">

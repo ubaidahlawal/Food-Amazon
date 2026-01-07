@@ -1,0 +1,99 @@
+.subscribe-section {
+    background-color: #EFFFE5;
+}
+
+.subscribe-box {
+    background-image: url("../assets/SubscibeBoxBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    max-width: 1000px;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.sb-h2 {
+  position: absolute;
+  top: 70px;
+  right: 330px;
+  font-family: var( --font-family-heading);
+  font-size: var(--fs-dm);
+}
+
+.sb-p {
+    position: absolute;
+    top: 130px;
+    right: 300px ;
+}
+
+.triangle {
+    position: absolute;
+    right: 850px;
+    top: -20px;
+}
+
+.oval-s {
+   position: absolute;
+   right: 110px;
+   bottom: 90px;
+}
+
+.sb-input{
+    position: absolute;
+    top: 190px;
+    right: 320px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    height: 60px;
+    width: 420px;
+    margin-top: 15px;
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-normal);
+    font-size: var( --fs-s);
+    margin-bottom: 35px;
+
+}
+
+.input-icon {
+    position: absolute;
+    top: 205px ;
+    right: 320px;
+}
+
+@media (max-width: 768px) {
+    .subscribe-box {
+        width: 100%;
+       max-width: 100%;
+       margin:  auto;
+    }
+    .sb-h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        right: 60px;
+    }
+    .sb-p {
+        font-size: 1rem;
+        text-align: center;
+        right: 25px;
+    }
+    .sb-input {
+        right: 60px;
+        max-width: 260px;
+        padding: 0.65rem 1rem;
+        height: 50px;
+        margin-top: 30px;
+    }
+    .input-icon {
+        right: 60px;
+        top: 220px;
+        max-width: 60px;
+    }
+    .oval-s {
+        overflow-x: hidden;
+    }
+
+
+}

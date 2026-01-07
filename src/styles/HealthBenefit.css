@@ -1,0 +1,92 @@
+.hb-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--fs-m);
+    font-weight: var(--fw-normal);
+}
+
+.HB-title {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-lx);
+    font-family: var(--font-family-heading);
+}
+
+.HB-span {
+    color: var(--secondary-color);
+}
+
+.HB-p {
+    line-height: 30px;
+    font-family: var(--font-family-base);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-light);
+}
+
+.HB-line {
+    width: 5px;
+    height: 35px;
+    background-color: var(--primary-color);
+    border: none;
+    flex-shrink: 0;
+    margin-top: 6px;
+    border-radius: 4px;
+}
+
+.vision-text {
+    font-size: var(--fs-s);
+    font-weight: var(--fw-light);
+    font-style: italic;
+    margin: 0;
+}
+
+.vision-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ceo-name {
+  font-family: "Calligraffitti";
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-light);
+}
+
+.ceo-title, .ceo-name {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .HB-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .HB-p {
+        text-align: center;
+        font-size: 14px;
+    }
+    .vision-wrapper {
+        justify-content: center;
+        flex-direction: row;
+        gap: 8px;
+        text-align: center;
+    }
+    .vision-text {
+        font-size: 0.85rem;
+    }
+    .ceo-signature {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .hb-btn {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+    .HB-line {
+        height: 30px;
+    }
+      
+    
+}

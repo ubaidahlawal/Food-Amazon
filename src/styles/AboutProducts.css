@@ -1,0 +1,14 @@
+.about-title {
+    font-family: var(--font-family-heading);
+    font-weight: var( --fw-bold);
+    font-size: 24px;
+    
+}
+
+.about-text {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-sml);
+    line-height: 30px;
+    
+
+}
