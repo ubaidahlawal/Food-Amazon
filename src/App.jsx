@@ -19,7 +19,7 @@ function App() {
       <Route path="/landing" element = {<Landing/>}/>
       <Route path="/landing2" element = {<Landing2/>}/>
       <Route path="/landing3" element = {<Landing3/>}/>
-      <Route path="/" element = {<CartModal/>} />
+      <Route path="/cart" element = {<CartModal/>} />
       <Route path="/landing4" element = {<Landing4/>}/>
       <Route path="/landing5" element = {<Landing5/>}/>
       <Route path="*" element = {<p>File Path Not Found</p>}/>

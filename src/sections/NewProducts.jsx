@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import React from "react";
 import "../styles/PopularProducts.css";
 import Almond from "../assets/Almond.png";
@@ -6,6 +7,19 @@ import Coconut from "../assets/Coconut.png";
 import HeartImg from "../assets/HeartImg.png";
 import StarIcon from "../assets/StarIcon.png";
 const NewProducts = ({ onAddToCart }) => {
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+      const fetchProducts = async () => {
+        const res = await fetch("http://localhost:4000/api/products");
+        const data = await res.json();
+        setProducts(data);
+      };
+  
+      fetchProducts();
+    }, [])
+
     return (
         <>
         <section className="products-section py-5">
