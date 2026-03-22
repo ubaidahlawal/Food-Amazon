@@ -29,10 +29,10 @@ const SignUp = () => {
             phone: e.target[2].value,
             password: e.target[3].value,
         };
-
+        console.log(formData);
         try {
             const res = await
-            fetch("http://localhost:4000/api/auth/signup",
+            fetch("http://foodamazo.netlify.app/api/auth/signup",
 
             {
                 method: "POST",

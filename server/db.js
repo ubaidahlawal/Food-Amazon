@@ -1,12 +1,12 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 
-const mongoURL = "mongodb://127.0.0.1:27017/foodamazon";
+// const mongoURL = "";
 
 const  connectDB = async () => {
 
     try {
-        await mongoose.connect(mongoURL, {
+        await mongoose.connect(process.env.MONGO_URL, {
         });
         console.log("MongoDB connected successfully");
     } catch (error) {
@@ -15,5 +15,5 @@ const  connectDB = async () => {
     }
 
 };
-mongoose.connect(process.env.MONGO_URL)
+// mongoose.connect(process.env.MONGO_URL)
 module.exports = connectDB;
