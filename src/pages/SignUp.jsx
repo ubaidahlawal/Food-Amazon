@@ -32,7 +32,7 @@ const SignUp = () => {
         console.log(formData);
         try {
             const res = await
-            fetch("http://foodamazo.netlify.app/api/auth/signup",
+            fetch("https://foodamazo.netlify.app/api/auth/signup",
 
             {
                 method: "POST",
