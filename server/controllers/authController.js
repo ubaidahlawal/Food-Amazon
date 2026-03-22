@@ -24,7 +24,7 @@ const signup = async (req, res) => {
 
         await user.save();
 
-        res.status(201).son({
+        res.status(201).json({
             message: "User created successfully",
             token: generateToken(user._id),
         });
